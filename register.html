@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Furry Friends</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/01965e2e66.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+        <div class="container" style="height: 170px;">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Furry Friends Logo" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Account</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    <!--------------Account Page------------>
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/logo.png" alt="" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container" style="height: 860px;">
+                        <div class="form-btn">
+                            <span style="font-size: 20px; text-align: center;">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form action="">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email Address">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirm Password">
+                            <input type="date" placeholder="Date of Birth">
+                            <div class="gender" align="left">
+                                <label for="gender" id="gender" style="font-size: 15px;">Gender</label>
+                                <input type="radio" value="Male" name="gender" style="width: 10px; height: 10px; padding: 10px; margin: 5px;">Male
+                                <input type="radio" value="Female" name="gender" style="width: 10px; height: 10px; padding: 10px; margin: 5px;">Female
+                            </div>
+                            <input type="text" inputmode="numeric" placeholder="Enter your Mobile Number">
+                            <select>
+                                <option value="">Choose Pet Owned</option>
+                                <option value="Cat">Cat</option>
+                                <option value="Dog">Dog</option>
+                            </select>
+                            <input type="text" placeholder="Breed of Pet Owned">
+                            <input type="number" placeholder="Your Pet's Age in years" min="1" max="25">
+                            <select>
+                                <option value="">Are you a Robot?</option>
+                                <option value="True">Yes!</option>
+                                <option value="False">Nope.</option>
+                            </select>
+                            <br><br>
+                            <input type="checkbox" style="width: 20px;"><span style="font-size: 12px;">I agree to the Terms and Conditions</span>
+                            <input type="reset" value="Reset" style="border-radius: 20px; display: inline-block; cursor: pointer;">
+                            <a href="index.html" class="btn">Register</a>
+                            <a href="login.html">Alread have an account? Login here.</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    </div>
+
+    <!--------Footer-------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS Smartphone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png" alt="" style="width: 100px;">
+                    <p>Our purpose is to provide essential products
+                    for all those pet owners and pets out there.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Furry Friends</p>
+        </div>
+    </div>
+
+</body>
+</html>
