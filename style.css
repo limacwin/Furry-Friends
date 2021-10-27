@@ -446,10 +446,16 @@ input:focus {
 
 /* Account Page */
 
+/* login page */
+
 .account-page {
     padding: 50px 0;
-    background: radial-gradient(#fff,#ffd6d6);
+    min-height: 565px;
+    background-image: url('images/bg-image.jpg'); 
+    background-size: cover;
 }
+
+/* register page */
 
 .sex {
     margin: 10px 0;
