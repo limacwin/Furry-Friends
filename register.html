@@ -46,20 +46,20 @@
                 <div class="col-2">
                     <div class="form-container" style="height: 860px;">
                         <div class="form-btn">
-                            <span style="font-size: 20px; text-align: center;">Register</span>
+                            <span>Register</span>
                             <hr id="Indicator">
                         </div>
 
-                        <form action="">
-                            <input type="text" placeholder="Username">
+                        <form action="login.html">
                             <input type="email" placeholder="Email Address">
+                            <input type="text" placeholder="Username">
                             <input type="password" placeholder="Password">
                             <input type="password" placeholder="Confirm Password">
                             <input type="date" placeholder="Date of Birth">
-                            <div class="gender" align="left">
-                                <label for="gender" id="gender" style="font-size: 15px;">Gender</label>
-                                <input type="radio" value="Male" name="gender" style="width: 10px; height: 10px; padding: 10px; margin: 5px;">Male
-                                <input type="radio" value="Female" name="gender" style="width: 10px; height: 10px; padding: 10px; margin: 5px;">Female
+                            <div class="sex" align="left">
+                                <label for="sex" style="font-size: 15px;">Sex</label>
+                                <input type="radio" value="Male" name="sex" style="width: 10px; height: 10px; padding: 10px; margin: 5px;">Male
+                                <input type="radio" value="Female" name="sex" style="width: 10px; height: 10px; padding: 10px; margin: 5px;">Female
                             </div>
                             <input type="text" inputmode="numeric" placeholder="Enter your Mobile Number">
                             <select>
@@ -74,11 +74,14 @@
                                 <option value="True">Yes!</option>
                                 <option value="False">Nope.</option>
                             </select>
-                            <br><br>
-                            <input type="checkbox" style="width: 20px;"><span style="font-size: 12px;">I agree to the Terms and Conditions</span>
+                            <br>
+                            <div style="padding: 10px 0;" align="left">
+                                <input type="checkbox" style="width: 10px; height: 10px;"><span>I agree to all the Terms and Conditions.</span><br>
+                                <input type="checkbox" style="width: 10px; height: 10px;"><span>I would like to receive email notifications.</span>
+                            </div>
                             <input type="reset" value="Reset" style="border-radius: 20px; display: inline-block; cursor: pointer;">
-                            <a href="index.html" class="btn">Register</a>
-                            <a href="login.html">Alread have an account? Login here.</a>
+                            <input type="submit" class="btn" value="Register">
+                            <a href="login.html">Already have an account? Login here.</a>
                         </form>
                     </div>
                 </div>
