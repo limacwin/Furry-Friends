@@ -11,28 +11,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <script src="https://use.fontawesome.com/01965e2e66.js"></script>
+    <script src="https://kit.fontawesome.com/b6868a5e32.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
 <body>
-    
-    <div class="container" style="height: 170px;">
+
+    <!--------Header-------->
+
+    <header>
         <div class="navbar">
             <div class="logo">
-                <img src="images/logo.png" alt="Furry Friends Logo" width="125px">
+                <a href="index.html"><img src="images/logo1.png" alt="Furry Friends Logo" width="115px"></a>
             </div>
-            <nav>
+            <div class="nav">
                 <ul id="MenuItems">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Account</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="account">
+                <a href="login.html" title="Account">
+                    <i class="fas fa-user-circle fa-2x"></i>
+                </a>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <!--------All Products-------->
 
     <div class="small-container">
 
@@ -93,9 +101,9 @@
 
             <div class="col-4">
                 <a href="product-details.html">
-                    <img src="images/max-food.png" alt="">
+                    <img src="images/dog-leash.png" alt="">
                 </a>
-                <h4>Max's Cat Food</h4>
+                <h4>Dog Leash</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -110,9 +118,9 @@
         <div class="row">
             <div class="col-4">
                 <a href="product-details.html">
-                    <img src="images/whiskas.png" alt="">
+                    <img src="images/dog-harness.png" alt="">
                 </a>
-                <h4>Whiskas Cat Food</h4>
+                <h4>Dog Harness</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -125,9 +133,9 @@
 
             <div class="col-4">
                 <a href="product-details.html">
-                    <img src="images/cat-belt.png" alt="">
+                    <img src="images/feeding-can.png" alt="">
                 </a>
-                <h4>Fancy Cat Neck Belt</h4>
+                <h4>Feeding Can</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -139,9 +147,9 @@
 
             <div class="col-4">
                 <a href="product-details.html">
-                    <img src="images/dog-medicine.png" alt="">
+                    <img src="images/himalaya-medicine-1.jpeg" alt="">
                 </a>
-                <h4>Digestion Pills for Dogs</h4>
+                <h4>Himalaya Medicine</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -153,9 +161,9 @@
 
             <div class="col-4">
                 <a href="product-details.html">
-                    <img src="images/max-food.png" alt="">
+                    <img src="images/cat-medicine.png" alt="">
                 </a>
-                <h4>Max's Cat Food</h4>
+                <h4>Cat Medicine</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -170,9 +178,9 @@
         <div class="row">
             <div class="col-4">
                 <a href="product-details.html">
-                    <img src="images/whiskas.png" alt="">
+                    <img src="images/dog-medicine.jpg" alt="">
                 </a>
-                <h4>Whiskas Cat Food</h4>
+                <h4>Dog Medicine</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -185,9 +193,9 @@
 
             <div class="col-4">
                 <a href="product-details.html">
-                    <img src="images/cat-belt.png" alt="">
+                    <img src="images/meO-food.png" alt="">
                 </a>
-                <h4>Fancy Cat Neck Belt</h4>
+                <h4>Me-O Cat Food</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -199,9 +207,9 @@
 
             <div class="col-4">
                 <a href="product-details.html">
-                    <img src="images/dog-medicine.png" alt="">
+                    <img src="images/dog-leash-collar.png" alt="">
                 </a>
-                <h4>Digestion Pills for Dogs</h4>
+                <h4>Dog Leash Collar</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -239,45 +247,41 @@
 
     <!--------Footer-------->
 
-    <div class="footer">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and iOS Smartphone.</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png" alt="">
-                        <img src="images/app-store.png" alt="">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="images/logo.png" alt="" style="width: 100px;">
-                    <p>Our purpose is to provide essential products
-                    for all those pet owners and pets out there.</p>
-                </div>
-                <div class="footer-col-3">
                     <h3>Useful Links</h3>
                     <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Join Affiliate</a></li>
                     </ul>
                 </div>
-                <div class="footer-col-4">
+
+                <div class="footer-col-2">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo1.png" alt="Furry Friends Logo" style="width: 200px;"></a>
+                    </div>
+                    <p style="color: white;">Our purpose is to provide essential products
+                    for all those pet owners and pets out there.</p>
+                </div>
+                
+                <div class="footer-col-3">
                     <h3>Follow Us</h3>
                     <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Youtube</li>
-                        <li>Instagram</li>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                        <li><a href="https://www.twitter.com">Twitter</a></li>
+                        <li><a href="https://www.youtube.com">YouTube</a></li>
                     </ul>
                 </div>
             </div>
             <hr>
             <p class="copyright">Copyright 2021 - Furry Friends</p>
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>

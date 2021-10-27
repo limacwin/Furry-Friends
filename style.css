@@ -158,6 +158,10 @@ p {
     padding-right: 25px;
 }
 
+.small-container .row p{
+    color: #555;
+}
+
 .col-4 {
     flex-basis: 25%;
     padding: 10px;
