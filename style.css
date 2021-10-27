@@ -500,7 +500,7 @@ input:focus {
 .form-container {
     background: #fff;
     width: 370px;
-    height: 400px;
+    height: 40px;
     position: relative;
     text-align: center;
     padding: 20px 0;
@@ -587,6 +587,26 @@ form a {
     width: 100%;
 }
 
+.entity-list .form-container {
+    margin-top: 50px;
+    height: 250px;
+    width: 400px;
+}
+
+.entity-list .form-container .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    margin-top: 10px;
+    height: 50px;
+    width: 250px;
+}
+
+.entity-list .form-container .form-container a {
+    color: #fff;
+}
+
 .entity-list a, .entity-list p {
     color: #777;
 }
@@ -594,6 +614,10 @@ form a {
 .table {
     height: 500px;
     width: 100%;
+}
+
+.table .form-container {
+    padding: 10px;
 }
 
 .entity a, .entity p {
