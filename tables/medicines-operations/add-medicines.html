@@ -14,6 +14,8 @@
     <script src="https://use.fontawesome.com/01965e2e66.js"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+    <script type="text/javascript" src="../../validation.js"></script>
+
 </head>
 <body class="entity">
     <div class="table">
@@ -38,16 +40,16 @@
                     <th style="color: orangered;">reset_button</th>
                     <th style="color: cyan;">add_button</th>
                 </tr>
-                <form action="../medicines-table.html">
+                <form onsubmit="return entity_validate()" action="../medicines-table.html">
                     <tr>
-                        <td><input type="number" placeholder="Enter product_id"></td>
-                        <td><input type="text" placeholder="Enter medicine_name"></td>
-                        <td><input type="text" placeholder="Enter pet_class"></td>
-                        <td><input type="text" placeholder="Enter pet_breed"></td>
-                        <td><input type="number" placeholder="Enter price"></td>
-                        <td><input type="date" placeholder="Enter mfgd_date"></td>
-                        <td><input type="date" placeholder="Enter expiry_date"></td>
-                        <td><input type="text" placeholder="Enter seller_name"></td>
+                        <td><input type="number" id="prod_id" placeholder="Enter product_id"></td>
+                        <td><input type="text" id="prod_name" placeholder="Enter medicine_name"></td>
+                        <td><input type="text" id="pet_class" placeholder="Enter pet_class"></td>
+                        <td><input type="text" id="pet_breed" placeholder="Enter pet_breed"></td>
+                        <td><input type="number" id="price" placeholder="Enter price"></td>
+                        <td><input type="date" id="mfgd_date" placeholder="Enter mfgd_date"></td>
+                        <td><input type="date" id="exp_date" placeholder="Enter expiry_date"></td>
+                        <td><input type="text" id="seller_name" placeholder="Enter seller_name"></td>
                         <td><input type="reset" value="Reset"></td>
                         <td><input type="submit" value="Add Product"></td>
                     </tr>

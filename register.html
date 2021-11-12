@@ -14,11 +14,11 @@
     <script src="https://kit.fontawesome.com/b6868a5e32.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+    <script type="text/javascript" src="validation.js"></script>
+
 </head>
 <body>
-
     <!--------Header-------->
-
     <header>
         <div class="navbar">
             <div class="logo">
@@ -39,9 +39,7 @@
             </div>
         </div>
     </header>
-
     <!--------------Account Page------------>
-
     <div class="account-page">
         <div class="container">
             <div class="row">
@@ -55,35 +53,34 @@
                             <span>Register</span>
                             <hr id="Indicator">
                         </div>
-
-                        <form action="login.html">
-                            <input type="email" placeholder="Email Address">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
-                            <input type="password" placeholder="Confirm Password">
-                            <input type="date" placeholder="Date of Birth">
+                        <form onsubmit="return register_validate()" action="login.html">
+                            <input type="text" id="email_address" placeholder="Email Address">
+                            <input type="text" id="uname" placeholder="Username">
+                            <input type="text" id="psw" placeholder="Password">
+                            <input type="text" id="confirm_psw" placeholder="Confirm Password">
+                            <input type="date" id="dob" placeholder="Date of Birth">
                             <div class="sex" align="left">
                                 <label for="sex" style="font-size: 15px;">Sex</label>
                                 <input type="radio" value="Male" name="sex" style="width: 10px; height: 10px; padding: 10px; margin: 5px;">Male
                                 <input type="radio" value="Female" name="sex" style="width: 10px; height: 10px; padding: 10px; margin: 5px;">Female
                             </div>
-                            <input type="text" inputmode="numeric" placeholder="Enter your Mobile Number">
-                            <select>
+                            <input type="text" id="mob_no" placeholder="Enter your Mobile Number">
+                            <select id="pet_owned">
                                 <option value="">Choose Pet Owned</option>
                                 <option value="Cat">Cat</option>
                                 <option value="Dog">Dog</option>
                             </select>
-                            <input type="text" placeholder="Breed of Pet Owned">
-                            <input type="number" placeholder="Your Pet's Age in years" min="1" max="25">
-                            <select>
+                            <input type="text" id="pet_breed" placeholder="Breed of Pet Owned">
+                            <input type="number" id="pet_age" placeholder="Your Pet's Age in years" min="1" max="25">
+                            <select id="robot_test">
                                 <option value="">Are you a Robot?</option>
                                 <option value="True">Yes!</option>
                                 <option value="False">Nope.</option>
                             </select>
                             <br>
                             <div style="padding: 10px 0;" align="left">
-                                <input type="checkbox" style="width: 10px; height: 10px;"><span>I agree to all the Terms and Conditions.</span><br>
-                                <input type="checkbox" style="width: 10px; height: 10px;"><span>I would like to receive email notifications.</span>
+                                <input type="checkbox" name="checkbox_val" style="width: 10px; height: 10px;"><span>I agree to all the Terms and Conditions.</span><br>
+                                <input type="checkbox" name="checkbox_val" style="width: 10px; height: 10px;"><span>I would like to receive email notifications.</span>
                             </div>
                             <input type="reset" value="Reset" style="border-radius: 20px; display: inline-block; cursor: pointer;">
                             <input type="submit" class="btn" value="Register">
@@ -93,12 +90,8 @@
                 </div>
             </div>
         </div>
-    
-
     </div>
-
     <!--------Footer-------->
-
     <footer>
         <div class="container">
             <div class="row">
@@ -111,7 +104,6 @@
                         <li><a href="#">Join Affiliate</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col-2">
                     <div class="logo">
                         <a href="index.html"><img src="images/logo1.png" alt="Furry Friends Logo" width: 200px;"></a>
@@ -119,7 +111,6 @@
                     <p>Our purpose is to provide essential products
                     for all those pet owners and pets out there.</p>
                 </div>
-                
                 <div class="footer-col-3">
                     <h3>Follow Us</h3>
                     <ul>
@@ -134,6 +125,5 @@
             <p class="copyright">Copyright 2021 - Furry Friends</p>
         </div>
     </footer>
-
 </body>
 </html>
